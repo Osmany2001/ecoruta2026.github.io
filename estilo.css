@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    RESET Y BASE
    ============================================================ */
 * {
@@ -286,6 +286,56 @@ h3 {
     padding: 60px 20px;
 }
 
+/* Descripción del formulario - alineada a la izquierda */
+.contratar-descripcion {
+    text-align: left;
+    font-size: 1.1rem;
+    color: #2e4a2e;
+    max-width: 700px;
+    margin: -15px auto 30px auto;
+    padding: 0 10px;
+    line-height: 1.6;
+}
+
+/* Métodos de pago destacados - mejor espaciado */
+.metodos-pago-destacados {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.metodo-pago-item {
+    background: #fff;
+    padding: 10px 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: transform 0.2s;
+}
+
+.metodo-pago-item:hover {
+    transform: translateY(-3px);
+}
+
+.metodo-pago-item img {
+    height: 35px;
+    width: auto;
+}
+
+.metodo-pago-item i {
+    font-size: 2rem;
+    color: #2e7d32;
+}
+
+.metodo-pago-item span {
+    font-size: 1rem;
+    color: #0f3b1e;
+}
+
 #contrato-form {
     max-width: 700px;
     margin: 0 auto;
@@ -395,6 +445,99 @@ h3 {
 }
 
 /* ============================================================
+   ACERCA DE NOSOTROS
+   ============================================================ */
+.acerca {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.acerca-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #2e4a2e;
+    max-width: 800px;
+    margin: -20px auto 40px auto;
+}
+
+.acerca-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.acerca-card {
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    border-bottom: 4px solid #2e7d32;
+    transition: transform 0.3s;
+}
+
+.acerca-card:hover {
+    transform: translateY(-6px);
+}
+
+.acerca-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background: #e8f5e9;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+}
+
+.acerca-icon i {
+    font-size: 2.2rem;
+    color: #2e7d32;
+}
+
+.acerca-card h3 {
+    font-size: 1.5rem;
+    color: #0f3b1e;
+    margin-bottom: 15px;
+}
+
+.acerca-card p {
+    font-size: 1rem;
+    color: #2e4a2e;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* ============================================================
+   VALORES
+   ============================================================ */
+.valores-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+}
+
+.valor-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    padding: 12px 24px;
+    border-radius: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    font-weight: 600;
+    color: #0f3b1e;
+}
+
+.valor-item i {
+    font-size: 1.3rem;
+    color: #2e7d32;
+}
+
+/* ============================================================
    FOOTER
    ============================================================ */
 footer {
@@ -498,7 +641,8 @@ footer .social a:hover {
 
     /* Tarjetas en una columna */
     .servicios-grid,
-    .flota-container {
+    .flota-container,
+    .acerca-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
@@ -527,6 +671,54 @@ footer .social a:hover {
     .contacto-info {
         flex-direction: column;
         gap: 20px;
+    }
+
+    /* Acerca de */
+    .acerca-card p {
+        text-align: left;
+    }
+
+    .valores-grid {
+        gap: 12px 20px;
+    }
+
+    .valor-item {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+
+    .acerca-intro {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    /* Contratar */
+    .contratar-descripcion {
+        text-align: left;
+        font-size: 1rem;
+        padding: 0 5px;
+        margin: -10px auto 25px auto;
+    }
+
+    .metodos-pago-destacados {
+        gap: 12px;
+    }
+
+    .metodo-pago-item {
+        padding: 8px 16px;
+        gap: 8px;
+    }
+
+    .metodo-pago-item img {
+        height: 28px;
+    }
+
+    .metodo-pago-item i {
+        font-size: 1.5rem;
+    }
+
+    .metodo-pago-item span {
+        font-size: 0.9rem;
     }
 
     /* Footer */
@@ -603,129 +795,8 @@ footer .social a:hover {
         min-height: 100px;
         padding: 15px 10px;
     }
-}
-/* ============================================================
-   ACERCA DE NOSOTROS
-   ============================================================ */
-.acerca {
-    padding: 60px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-.acerca-intro {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #2e4a2e;
-    max-width: 800px;
-    margin: -20px auto 40px auto;
-}
-
-.acerca-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.acerca-card {
-    background: #fff;
-    padding: 35px 25px;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-    text-align: center;
-    border-bottom: 4px solid #2e7d32;
-    transition: transform 0.3s;
-}
-
-.acerca-card:hover {
-    transform: translateY(-6px);
-}
-
-.acerca-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    height: 70px;
-    background: #e8f5e9;
-    border-radius: 50%;
-    margin: 0 auto 15px auto;
-}
-
-.acerca-icon i {
-    font-size: 2.2rem;
-    color: #2e7d32;
-}
-
-.acerca-card h3 {
-    font-size: 1.5rem;
-    color: #0f3b1e;
-    margin-bottom: 15px;
-}
-
-.acerca-card p {
-    font-size: 1rem;
-    color: #2e4a2e;
-    line-height: 1.7;
-    text-align: justify;
-}
-
-/* ============================================================
-   VALORES
-   ============================================================ */
-.valores-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px 40px;
-}
-
-.valor-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: #fff;
-    padding: 12px 24px;
-    border-radius: 50px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-    font-weight: 600;
-    color: #0f3b1e;
-}
-
-.valor-item i {
-    font-size: 1.3rem;
-    color: #2e7d32;
-}
-
-/* ============================================================
-   RESPONSIVE: ACERCA
-   ============================================================ */
-@media (max-width: 768px) {
-    .acerca-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .acerca-card p {
-        text-align: left;
-    }
-
-    .valores-grid {
-        gap: 12px 20px;
-    }
-
-    .valor-item {
-        padding: 10px 18px;
-        font-size: 0.9rem;
-    }
-
-    .acerca-intro {
-        font-size: 1rem;
-        padding: 0 10px;
-    }
-}
-
-@media (max-width: 480px) {
+    /* Acerca de */
     .acerca-card {
         padding: 25px 18px;
     }
@@ -751,5 +822,30 @@ footer .social a:hover {
 
     .valor-item i {
         font-size: 1rem;
+    }
+
+    /* Contratar */
+    .contratar-descripcion {
+        font-size: 0.95rem;
+    }
+
+    .metodos-pago-destacados {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .metodo-pago-item {
+        width: 100%;
+        justify-content: center;
+        padding: 10px 16px;
+    }
+
+    .metodo-pago-item img {
+        height: 30px;
+    }
+
+    .metodo-pago-item i {
+        font-size: 1.8rem;
     }
 }
