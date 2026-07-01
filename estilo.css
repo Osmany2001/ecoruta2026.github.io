@@ -288,8 +288,7 @@ h3 {
 
 /* Descripción del formulario - alineada a la izquierda */
 .contratar-descripcion {
-    text-align: center;
-    justify-content: center;
+    text-align: left;
     font-size: 1.1rem;
     color: #2e4a2e;
     max-width: 700px;
@@ -391,14 +390,14 @@ h3 {
 
 .pago-card {
     background: #fff;
-    padding: 25px 15px;
+    padding: 30px 20px;
     border-radius: 16px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 140px;
+    min-height: 160px;
     transition: transform 0.3s;
 }
 
@@ -407,25 +406,31 @@ h3 {
 }
 
 .pago-card p {
-    margin-top: 12px;
+    margin-top: 8px;
     font-size: 0.95rem;
+    text-align: center;
 }
 
-/* ===== LOGOS DE PAGO UNIFORMES ===== */
-.logo-pago {
-    height: 50px;
-    width: auto;
-    object-fit: contain;
-}
-
-.icono-dolar {
-    font-size: 3.2rem;
+/* ============================================================
+   NUEVOS MÉTODOS DE PAGO: TRANSFERENCIA Y CHEQUES
+   ============================================================ */
+.icono-pago {
+    font-size: 3.5rem;
     color: #2e7d32;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 100%;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.badge-pago {
+    display: inline-block;
+    background: #e8f5e9;
+    color: #0f3b1e;
+    font-size: 0.75rem;
+    padding: 4px 14px;
+    border-radius: 30px;
+    margin-top: 8px;
+    font-weight: 600;
+    border: 1px solid #2e7d32;
 }
 
 /* ============================================================
@@ -654,18 +659,18 @@ footer .social a:hover {
     }
 
     /* Logos de pago */
-    .logo-pago {
-        height: 40px;
-    }
-
-    .icono-dolar {
-        font-size: 2.6rem;
-        height: 40px;
+    .icono-pago {
+        font-size: 2.8rem;
     }
 
     .pago-card {
-        min-height: 120px;
-        padding: 20px 10px;
+        min-height: 140px;
+        padding: 20px 15px;
+    }
+
+    .badge-pago {
+        font-size: 0.7rem;
+        padding: 3px 12px;
     }
 
     /* Contacto en columna */
@@ -783,18 +788,18 @@ footer .social a:hover {
         gap: 12px;
     }
 
-    .logo-pago {
-        height: 32px;
-    }
-
-    .icono-dolar {
-        font-size: 2rem;
-        height: 32px;
+    .icono-pago {
+        font-size: 2.2rem;
     }
 
     .pago-card {
-        min-height: 100px;
+        min-height: 120px;
         padding: 15px 10px;
+    }
+
+    .badge-pago {
+        font-size: 0.65rem;
+        padding: 2px 10px;
     }
 
     /* Acerca de */
